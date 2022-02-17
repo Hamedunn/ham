@@ -13,9 +13,9 @@ import random
 import urllib
 import io
 
-print ("welcome, Created By Ali HL\n")
+print ("welcome, Created By Hamed\n")
 
-print ("Please subscribe to the channel to receive updates! : for telegram : @ASY0405\n")
+print ("Please subscribe to the channel to receive updates! : for telegram : @hamed_sql\n")
 
 bot = Bot(input("Please enter your Auth:"))
 target=input("Please Enter Your Guid (Group): ")
@@ -257,13 +257,13 @@ while True:
 								
 						elif msg.get("text").startswith("ربات") or msg.get("text").startswith("بات"):
 							try:
-								bot.sendMessage(target, "جــونـم😁💋", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "جون دلم عزیزوم💋 ", message_id=msg.get("message_id"))
 							except:
 								print("err bot answer")
 								
 						elif msg.get("text").startswith("😂") or msg.get("text").startswith("🤣"):
 							try:
-								bot.sendMessage(target, "جــون تـو فــقط بخـند😍", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "نخند چون دماخت گنده میشه😔", message_id=msg.get("message_id"))
 							except:
 								print("err luagh")
 								
@@ -582,7 +582,7 @@ while True:
 					
 					elif data["type"]=="AddedGroupMembers":
 					                user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\n سازنده ی ربات: @del_bot", message_id=msg["message_id"])
 					
 					elif data["type"]=="LeaveGroup":
 						try:
@@ -603,7 +603,7 @@ while True:
 							
 					elif data["type"]=="JoinedGroupByLink":
 					                user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nدوست داری ربات بسازی؟ بیا اینجا😍👇\n@RobotHL", message_id=msg["message_id"])
+					                bot.sendMessage(target, f"هــای {user} عزیز 😘🌹 \n • به گـروه {name} خیـلی خوش اومدی 😍❤️ \nلطفا قوانین رو رعایت کن .\n 💎 برای مشاهده قوانین کافیه کلمه (قوانین) رو ارسال کنی!\nسازنده ی ربات : @del_bot", message_id=msg["message_id"])
 
 				else:
 					if "forwarded_from" in msg.keys() and bot.getMessagesInfo(target, [msg.get("message_id")])[0]["forwarded_from"]["type_from"] == "Channel" and not msg.get("author_object_guid") in admins :
