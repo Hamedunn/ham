@@ -1,7 +1,0 @@
-rubika
-mutagen
-gtts
-request
-urllib
-random
-io
